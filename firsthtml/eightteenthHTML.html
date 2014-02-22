@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+   <script>
+   function testaa()
+   {
+	   var a=new Date();
+	   document.getElementById("pa").innerHTML=a;
+	   setTimeout("testaa()",2000);
+       var b="sdfdf";
+       document.getElementById("pb").innerHTML=b;
+
+   }
+  </script>
+ </head>
+ <body onload="testaa()">
+ <p id="pa">hufhdu</p>
+
+ <p id="pb">jfjdhi</p>
+ </body>
+</html>

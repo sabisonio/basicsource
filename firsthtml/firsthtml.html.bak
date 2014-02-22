@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>哎哟熊商铺</title>
+  <script language="javascript">
+
+      function functiona ()
+	  {
+	 var bianlianga=document.all["xialakuanga"].value
+     var bianliangb=document.all["xialakuanga"].value
+	 var bianliangc=document.all["xialakuanga"].value
+	 var zhaopianurl=document.all["zhaopiana"].src
+     if (bianlianga=="knife")
+     {
+		//document.all.zhaopiana.src="document.all["xialakuanga"].value"+".jpg";
+		document.all["zhaopiana"].src ="file:///D:/firsthtml/knife.jpg"
+		//alert (document.all["zhaopiana"].src)
+		//alert(document.all["xialakuanga"].value)
+     }
+	 else if (bianlianga=="icecream")
+     {
+		//<img src="要刀吗.jpg" alt="要刀吗" />
+		//alert(document.all["xialakuanga"].value)
+		//alert (document.all["zhaopianb"].src)
+		document.all["zhaopiana"].src ="file:///D:/firsthtml/icecream.jpg"
+     }
+	 else if (bianlianga=="handpaper")
+     {
+		//<img src="要刀吗.jpg" alt="要刀吗" />
+		//alert(document.all["xialakuanga"].value)
+		//alert (document.all["zhaopianc"].src)
+		document.all["zhaopiana"].src ="file:///D:/firsthtml/handpaper.jpg"
+     }
+      }  
+  </script>
+ </head>
+ <body>
+  <table>
+  <tr>
+  <td>
+   <select id="xialakuanga" value="knife" style="color:green" onchange="functiona()">
+   <option id ="xuanxianga" value="knife" style="color:green">knife</option>
+   <option id ="xuanxiangb" value="icecream" style="color:green">icecream</option>
+   <option id ="xuanxiangc" value="handpaper" style="color:green">handpaper</option>
+   </select>
+  </td>
+  </tr>
+  </table>
+  <table>
+  <tr>
+  <td>
+   <img id="zhaopiana" src="file:///D:/firsthtml/knife.jpg" alt="knife" />
+   <img id="zhaopianb" src="file:///D:/firsthtml/icecream.jpg" alt="icecream"/>
+   <img id="zhaopianc" src="file:///D:/firsthtml/handpaper.jpg" alt="handpaper"/>
+  </td>
+  </tr>
+  </table>
+ </body>
+</html>

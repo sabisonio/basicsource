@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+    var x=window.innerWith || document.documentElement.clientWidth ||document.body.clientWidth;
+	
+	//alert(x);
+
+
+	var y=window.innerHeight || document.documentElement.clientHeight ||document.body.clientHeight;
+
+    var z=screen.availWidth;
+
+	var a=screen.availHeight;
+
+	//alert(a);
+	//alert(z);
+    //alert(x);
+	//alert(y);
+
+	document.write(location.href+"<br/>");
+	document.write(location.pathname+"<br/>");
+	document.write(location.port);
+	document.write(location.protocol+"<br/>");
+
+
+	function testaa()
+	{
+		location.assign("ninthHTML.html");
+    }
+	
+  </script>
+
+  <button onclick="testaa()">fdfd</button>
+  <button onclick="window.open() ">buibi</button>
+
+
+  <script>
+  function testbb()
+  {
+	  window.history.back();
+  }
+ 
+  </script>
+   <input type="button" value="按钮" onclick="testbb()"></input>
+
+  <script>
+   function testcc()
+   {
+	   window.history.forward();
+   }
+
+  </script>
+ 
+ <input type="button" value="按钮2" onclick="testcc()"></input>
+ </body>
+</html>
+ 

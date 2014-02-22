@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body onload="testaa()">
+  <script>
+  function testaa()
+  {
+	  if (imga.src.match("handpaper"))
+	  {
+		  imga.src="knife.jpg";
+	  }
+	  else if (imga.src.match("knife"))
+	  {
+		  imga.src="icecream.jpg";
+	  }
+	  else if (imga.src.match("icecream"))
+	  {
+		  imga.src="handpaper.jpg";
+	  }
+	  setTimeout("testaa()",2000);
+  }
+  </script>
+  <img id="imga" alt="dao a" src="handpaper.jpg"/>
+ </body>
+</html>

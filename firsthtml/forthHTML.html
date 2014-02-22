@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  function test(x)
+  {
+   var x;
+   var y;
+   var z;
+   
+   if (6<x&x<12)
+   {
+	   y=1
+   }
+   else if (12<x&x<18)
+   {
+	   y=2
+   }
+   else if (18<x&x<23)
+   {
+	   y=3
+   }
+   else 
+   {
+	   y=0
+   }
+  // alert(x);
+  // alert(y);
+   switch(y)
+   {
+       case 1:
+	   z="it is morning";
+       break;
+	   case 2:
+	   z="it is afternoon";
+	   break;
+	   case 3:
+	   z="it is evening";
+	   break;
+	   case 0:
+	   z="it is mid night";
+	   break;
+   }
+   alert(z);
+  }
+ 
+  </script>
+  <button onclick=test(1)>测试</button>
+ </body>
+</html>

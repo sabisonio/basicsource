@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+   
+ </head>
+ <body onload="testaa()">
+
+ 
+  <table>
+  <tr id="firstrow">jkjl
+ 
+  </tr>
+  </table>
+
+ </body>
+ <script>
+ function testaa()
+ {
+  var a='';
+   for (i=0;i<=6 ;i++ )
+   {
+	   a+='<td>'+i+'</td>';
+	  
+   }
+   var b=document.getElementById("firstrow").innerHTML;
+    alert(b);
+   //alert(a);
+ }
+  </script>
+</html>

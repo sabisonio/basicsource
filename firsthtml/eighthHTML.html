@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <p id="testbb">以前的内容</p>
+  <script>
+  document.getElementById("testbb").style.color="red";
+  
+  </script>
+  <img id="testcc" src="handpaper.jpg"/>
+  <script>
+     document.getElementById("testcc").src="icecream.jpg";
+  </script>
+  <p id="testdd">测试文档</p>
+  <script>
+  function testgg()
+  {
+     document.getElementById("testdd").style.visibility="visible";
+     document.getElementById("testdd").style.color="blue";
+  }
+  </script>
+  <button id="testdd" onclick="document.getElementById('testdd').style.visibility='hidden'">点击这里测试</button>
+  <button id="testee" onclick="" onclick=testgg()>点击测试</button>
+ </body>
+</html>

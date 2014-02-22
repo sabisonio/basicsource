@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+   
+   function testa()
+   {
+	 x=document.getElementById("zhaopiana");
+     if (x.src.match("handpaper"))
+     {
+		 x.src="icecream.jpg"
+     }
+     else
+	   {
+         x.src="handpaper.jpg";
+	   }
+
+   }
+  </script>
+  <img id="zhaopiana" border="0" src="handpaper.jpg" onclick="testa()">
+
+
+  <script>
+  function changewenzhangneirong(){
+   y=document.getElementById("wenzhanga");
+   y.innerHTML="好像真的能改变呢";
+
+
+  }
+  </script>
+  <p id="wenzhanga">是不是能改变呢</p>
+  <button  onclick="changewenzhangneirong()">试一下</button>
+ </body>
+</html>

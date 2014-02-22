@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ 
+  <script>
+  function testbb()
+  {
+	  
+    try
+    {
+	  var x=document.getElementById("tbaa").value;
+	  if (x=="") throw "值不能为空";
+	  if (isNaN(x)) throw "请输入数字";
+	  if (x>10) throw "请输入小于10的值";
+	  if (x<5) throw "请输入大于5的值";
+	  
+	  
+    }
+    catch (err)
+    {
+		var y=document.getElementById("tsaa");
+		y.innerHTML= "错误提示:"+err+".";
+    }
+  }
+  </script>
+  <input style="color:gray" type="textbox" id="tbaa"></input>
+  <button onclick="testbb()">查找年纪</button>
+  <p id="tsaa"></p>
+  
+ </body>
+</html>

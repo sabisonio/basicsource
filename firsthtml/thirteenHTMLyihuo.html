@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+    //先用函数生成一个对象
+	function testaa(firstname,lastname,sex,age)
+	{
+		this.firstname=firstname;
+		this.lastname=lastname;
+        this.sex=sex;
+		this.age=age;
+        this.testbb=testbb;
+	//再建一个函数，改变对象的值
+		function testbb(id)
+		{
+			this.firstname=id;
+		}
+	}
+	var wu=new testaa("wu","menghua","nv","23");
+	wu.testbb("lin");
+	document.write(wu.firstname);
+  </script>
+ </body>
+</html>

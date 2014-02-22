@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+   <script>
+   //定义数组
+   var ceshishuzu= new Array();
+   
+   ceshishuzu[0]=new Array();
+   ceshishuzu[0][0]="viva00";
+   ceshishuzu[0][1]="viva01";
+   ceshishuzu[0][2]="viva02";
+
+   ceshishuzu[1]=new Array();
+   ceshishuzu[1][0]="viva10";
+   ceshishuzu[1][1]="viva11";
+   ceshishuzu[1][2]="viva12";
+
+   ceshishuzu[2]=new Array();
+   ceshishuzu[2][0]="viva20";
+   ceshishuzu[2][1]="viva21";
+   ceshishuzu[2][2]="viva22";
+ 
+   ceshishuzu[3]=new Array();
+   ceshishuzu[3][0]="viva30";
+   ceshishuzu[3][1]="viva31";
+   ceshishuzu[3][2]="viva32";
+
+   ceshishuzu[4]=new Array();
+   ceshishuzu[4][0]="viva40";
+   ceshishuzu[4][1]="viva41";
+   ceshishuzu[4][2]="viva42";
+    var i;
+	var j;
+
+	function shuchushuzu()
+	{
+       for (i=0;i<ceshishuzu.length ;i++ )
+       {
+		   for (j=0;j<ceshishuzu[i].length;j++ )
+		   {
+			   document.write(ceshishuzu[i][j]);
+		   }
+		   document.write("<br/>");
+       }
+   	}
+
+
+   	//function shuchushuzu()
+	//{
+      //for (i=0;i<test.length ;i++ )	// 遍历 test
+      //{
+		//  for (j=0;j<test[i].length ;j++ ) // 遍历test[i]
+		 // {
+			//  document.write(test[i][j]);
+		  //}
+		  //document.write("<br/>");
+      //}
+	//}
+
+
+
+
+
+   </script>
+   <button id="test" onclick=shuchushuzu()>点击测试</button>
+ </body>
+</html>

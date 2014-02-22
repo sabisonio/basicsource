@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+  var cuowuxinxi="";
+    function testaa()
+	{
+      try 
+      {
+		allert("welcome");
+      }
+      catch (err)
+      {
+          cuowuxinxi="本页有个语法错误"+"\n\n";
+          cuowuxinxi+="错误信息是"+err.message+"\n\n";
+		  cuowuxinxi+="点击确认继续\n\n"
+		  alert(cuowuxinxi);
+      }
+	}
+  </script>
+ </head>
+ <body>
+  
+  <button onclick="testaa()">点击测试</button>
+ </body>
+</html>

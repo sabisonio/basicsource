@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <div id="testaa" onmousedown="testbb(this)" onmouseup="testcc(this)" 
+  style="background-color:blue;width:50px;height:50px;padding:50px;color:#ffffff ">请按下鼠标</div>
+  <script>
+    function testbb(id)
+	{
+        id.style.backgroundColor="red";
+        id.innerHTML="请释放鼠标";
+    }
+	function testcc(id)
+	{
+       id.style.backgroundColor="yellow";
+       id.innerHTML="请按下鼠标";
+	}
+  </script>
+
+
+
+
+
+
+ </body>
+</html>
