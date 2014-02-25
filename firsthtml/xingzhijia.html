@@ -21,10 +21,20 @@
     font-size:30px;
 	text-decoration:underline;
 	font-style:italic;
+	color:#FF82AB;
+	border-color:red;
   }
   </style>
+  <script>
+  function testaa()
+  {
+	  //alert();
+    document.getElementById("work").style.display="block";
+
+  }
+  </script>
  </head>
- <body style='background-color:#FFF0F5';>
+ <body style='background-color:#FFC0CB';>
  
   <div class="biaoti">
   <h1>xing xing's home</h1>
@@ -32,8 +42,31 @@
   <div style="height:38px;"></div>
   <div style="height:38px; background-color:#FFC0CB">
    <table>
-   <tr><td> <a href="http://www.baidu.com">baidu</a></td></tr>
+   <tr>
+   <td style='position:absolute;left:200px;' > <a href="#" onclick="testaa()">work</a></td>
+   <td style='position:absolute;left:400px;';> <a href="http://www.baidu.com">study</a></td>
+   <td style='position:absolute;left:600px;';> <a href="http://www.baidu.com">news</a></td>
+   <td style='position:absolute;left:800px;';> <a href="http://www.baidu.com">entertaiment</a></td>
+   </tr>
    </table>
   </div>
+  <div style="height:35px;background-color:yellow;"></div>
+
+
+  <div id='work' style="height:35px;width:200px;position:relative;left:120px;display:none;">
+  <table>
+  <tr> <td><a href="http://www.biz.wxchina.com">翼讯正式站点</a></td> </tr>
+  <tr> <td><a href="http://www.biz.wxchina.com:8080">翼讯8080站点</a></td> </tr>
+  <tr> <td><a href="http://120.132.147.135:8080">娃哈哈站点</a></td> </tr>
+  <tr> <td><a href="http://120.132.147.135:8080">洁柔站点</a></td> </tr>
+  <tr> <td><a href="http://www.yx.wxchina.com">3.4或4.6站点</a></td> </tr>
+  <tr> <td><a href="http://120.132.147.135:8080">CRM配置站点</a></td> </tr>
+  </table>
+  </div>
+ 
+  
+   
+
+  
  </body>
 </html>
